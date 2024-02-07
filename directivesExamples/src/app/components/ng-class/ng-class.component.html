@@ -1,0 +1,11 @@
+<div>
+    <div *ngFor="let course of courses">
+        <div [ngStyle]="{'color':'orange','background-color':'cyan'}" [ngClass]="{tdata:true}">
+            This is with out nonbindable div {{course}}
+        </div>
+        <div ngNonBindable [style.color]="'red'">
+            This is with ngNonBindable div {{course}}
+        </div>
+        <br/>
+    </div>
+</div>
